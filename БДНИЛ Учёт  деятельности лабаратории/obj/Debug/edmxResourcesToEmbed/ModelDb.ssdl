@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Model" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Adress">
+    <Key>
+      <PropertyRef Name="IdAdress" />
+    </Key>
+    <Property Name="IdAdress" Type="int" Nullable="false" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContactPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BankClient">
+    <Key>
+      <PropertyRef Name="IdAccountClient" />
+    </Key>
+    <Property Name="IdAccountClient" Type="int" Nullable="false" />
+    <Property Name="AccountOfTheClient" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BankProvider">
+    <Key>
+      <PropertyRef Name="IdAccountSupplier" />
+    </Key>
+    <Property Name="IdAccountSupplier" Type="int" Nullable="false" />
+    <Property Name="AccountOfTheSupplier" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BanMsg">
+    <Key>
+      <PropertyRef Name="IdBanMessage" />
+    </Key>
+    <Property Name="IdBanMessage" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReasoneBan" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="IdClient" />
+    </Key>
+    <Property Name="IdClient" Type="int" Nullable="false" />
+    <Property Name="TypeOfInstitutionalUnits" Type="bit" />
+    <Property Name="OrderVolume" Type="int" />
+    <Property Name="PlantId" Type="int" />
+    <Property Name="TheProspectOfFurtherCooperation" Type="bit" />
+    <Property Name="AccountClientId" Type="int" />
+    <Property Name="AdressId2" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="IdEmployee" />
+    </Key>
+    <Property Name="IdEmployee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="text" Nullable="false" />
+    <Property Name="Surname" Type="text" Nullable="false" />
+    <Property Name="Patronymic" Type="text" Nullable="false" />
+    <Property Name="WorkExpirience" Type="nvarchar" MaxLength="50" />
+    <Property Name="DayPerfomance" Type="int" />
+  </EntityType>
+  <EntityType Name="Plants">
+    <Key>
+      <PropertyRef Name="IdPlant" />
+    </Key>
+    <Property Name="IdPlant" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sort" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Count" Type="int" Nullable="false" />
+    <Property Name="Age" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PrimeCost" Type="money" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Provider">
+    <Key>
+      <PropertyRef Name="IdProvider" />
+    </Key>
+    <Property Name="IdProvider" Type="int" Nullable="false" />
+    <Property Name="NameOfSupplier" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ResourceId" Type="int" Nullable="false" />
+    <Property Name="AccountSupplierId" Type="int" />
+    <Property Name="AdressId1" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Resource">
+    <Key>
+      <PropertyRef Name="IdResource" />
+    </Key>
+    <Property Name="IdResource" Type="int" Nullable="false" />
+    <Property Name="Cost" Type="money" Nullable="false" />
+    <Property Name="TypeOfRawMaterial" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CountResource" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TechTable">
+    <Key>
+      <PropertyRef Name="PlantID" />
+      <PropertyRef Name="ClientID" />
+    </Key>
+    <Property Name="PlantID" Type="int" Nullable="false" />
+    <Property Name="ClientID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="IdUserRole" />
+    </Key>
+    <Property Name="IdUserRole" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="IdUsers" />
+    </Key>
+    <Property Name="IdUsers" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" />
+    <Property Name="FName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserPatronymic" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BanMessageId" Type="int" />
+    <Property Name="UserRoleId" Type="nchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Client_Adress">
+    <End Role="Adress" Type="Self.Adress" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adress">
+        <PropertyRef Name="IdAdress" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="AdressId2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Client_BankClient">
+    <End Role="BankClient" Type="Self.BankClient" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BankClient">
+        <PropertyRef Name="IdAccountClient" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="AccountClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Plants_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Plants" Type="Self.Plants" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="IdEmployee" />
+      </Principal>
+      <Dependent Role="Plants">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Provider_Adress">
+    <End Role="Adress" Type="Self.Adress" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Provider" Type="Self.Provider" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adress">
+        <PropertyRef Name="IdAdress" />
+      </Principal>
+      <Dependent Role="Provider">
+        <PropertyRef Name="AdressId1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Provider_BankProvider">
+    <End Role="BankProvider" Type="Self.BankProvider" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Provider" Type="Self.Provider" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BankProvider">
+        <PropertyRef Name="IdAccountSupplier" />
+      </Principal>
+      <Dependent Role="Provider">
+        <PropertyRef Name="AccountSupplierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Provider_Resource">
+    <End Role="Resource" Type="Self.Resource" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Provider" Type="Self.Provider" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Resource">
+        <PropertyRef Name="IdResource" />
+      </Principal>
+      <Dependent Role="Provider">
+        <PropertyRef Name="ResourceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_techtabl_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TechTable" Type="Self.TechTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="IdClient" />
+      </Principal>
+      <Dependent Role="TechTable">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_techtabl_Plants">
+    <End Role="Plants" Type="Self.Plants" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TechTable" Type="Self.TechTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plants">
+        <PropertyRef Name="IdPlant" />
+      </Principal>
+      <Dependent Role="TechTable">
+        <PropertyRef Name="PlantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_BanMsg">
+    <End Role="BanMsg" Type="Self.BanMsg" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BanMsg">
+        <PropertyRef Name="IdBanMessage" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="BanMessageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_UserRoles">
+    <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRoles">
+        <PropertyRef Name="IdUserRole" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="UserRoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ModelContainer">
+    <EntitySet Name="Adress" EntityType="Self.Adress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BankClient" EntityType="Self.BankClient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BankProvider" EntityType="Self.BankProvider" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BanMsg" EntityType="Self.BanMsg" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Plants" EntityType="Self.Plants" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Provider" EntityType="Self.Provider" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Resource" EntityType="Self.Resource" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TechTable" EntityType="Self.TechTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Client_Adress" Association="Self.FK_Client_Adress">
+      <End Role="Adress" EntitySet="Adress" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Client_BankClient" Association="Self.FK_Client_BankClient">
+      <End Role="BankClient" EntitySet="BankClient" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Plants_Employee" Association="Self.FK_Plants_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Plants" EntitySet="Plants" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Provider_Adress" Association="Self.FK_Provider_Adress">
+      <End Role="Adress" EntitySet="Adress" />
+      <End Role="Provider" EntitySet="Provider" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Provider_BankProvider" Association="Self.FK_Provider_BankProvider">
+      <End Role="BankProvider" EntitySet="BankProvider" />
+      <End Role="Provider" EntitySet="Provider" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Provider_Resource" Association="Self.FK_Provider_Resource">
+      <End Role="Resource" EntitySet="Resource" />
+      <End Role="Provider" EntitySet="Provider" />
+    </AssociationSet>
+    <AssociationSet Name="FK_techtabl_Client" Association="Self.FK_techtabl_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="TechTable" EntitySet="TechTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_techtabl_Plants" Association="Self.FK_techtabl_Plants">
+      <End Role="Plants" EntitySet="Plants" />
+      <End Role="TechTable" EntitySet="TechTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_BanMsg" Association="Self.FK_Users_BanMsg">
+      <End Role="BanMsg" EntitySet="BanMsg" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_UserRoles" Association="Self.FK_Users_UserRoles">
+      <End Role="UserRoles" EntitySet="UserRoles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

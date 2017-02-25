@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.addition.Command" BaseTypeListCollapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>addition\Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.addition.Notifier">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>addition\Notifier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.AddPasswordWin" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AddPasswordWin.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.AdminWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIBAAAACgBAAAhACAAAAAAAAABAACAAEAAAAAAEAA=</HashCode>
+      <FileName>AdminWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.App" Collapsed="true">
+    <Position X="20.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.AuthorizationWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAQAAAAAgAAEAAAAAIAAAACAAAAACAgQQAAAAAAAA=</HashCode>
+      <FileName>AuthorizationWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Entities" Collapsed="true">
+    <Position X="19.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQACAAIAAEAAAAAAAAAAAAGAgAAAgACAQAAAAAAAQ=</HashCode>
+      <FileName>ModelDb.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Adress" Collapsed="true">
+    <Position X="20.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAw=</HashCode>
+      <FileName>Adress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.BankClient" Collapsed="true">
+    <Position X="19.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>BankClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.BankProvider" Collapsed="true">
+    <Position X="19.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>BankProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.BanMsg" Collapsed="true">
+    <Position X="19.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>BanMsg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Client">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQACACAAAAAAAAIAAAAAAABAgAAAAAAAQBBAAAAIA=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Employee" Collapsed="true">
+    <Position X="19.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQACAAAAAAAAAAAAAAAAQABAACIAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Plants">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAEAQAAQACAAAAAAAAAAAEAACAAQ=</HashCode>
+      <FileName>Plants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Provider" Collapsed="true">
+    <Position X="20.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAIAAAgAAAAACAAAAAAAgAAAAAAAQAAQAAAAA=</HashCode>
+      <FileName>Provider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Resource" Collapsed="true">
+    <Position X="19.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAEAAAAAAAAABAAAAAAAAAAAAABAgAAAAA=</HashCode>
+      <FileName>Resource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.UserRoles">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAEAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserRoles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Users">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAhAAAAAAAAAEAAABAAgCCACQAAAAAgA=</HashCode>
+      <FileName>Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Classes.AdminWindowModel">
+    <Position X="0.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAARAWACAICAAcAEjJCAABCxAAAAiYgACmIARggUAgI=</HashCode>
+      <FileName>Classes\AdminWindowModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Classes.Query">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAQAAAgAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Query.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Classes.UsersItemWrapper">
+    <Position X="4.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\UsersItemWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Properties.Resources" Collapsed="true">
+    <Position X="19.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="БДНИЛ_Учёт__деятельности_лабаратории.Properties.Settings" Collapsed="true">
+    <Position X="20.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAQAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

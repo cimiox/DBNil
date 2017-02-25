@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Adress">
+      <EntityTypeMapping TypeName="Model.Adress">
+        <MappingFragment StoreEntitySet="Adress">
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="Adress1" ColumnName="Adress" />
+          <ScalarProperty Name="IdAdress" ColumnName="IdAdress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BankClient">
+      <EntityTypeMapping TypeName="Model.BankClient">
+        <MappingFragment StoreEntitySet="BankClient">
+          <ScalarProperty Name="AccountOfTheClient" ColumnName="AccountOfTheClient" />
+          <ScalarProperty Name="IdAccountClient" ColumnName="IdAccountClient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BankProvider">
+      <EntityTypeMapping TypeName="Model.BankProvider">
+        <MappingFragment StoreEntitySet="BankProvider">
+          <ScalarProperty Name="AccountOfTheSupplier" ColumnName="AccountOfTheSupplier" />
+          <ScalarProperty Name="IdAccountSupplier" ColumnName="IdAccountSupplier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BanMsg">
+      <EntityTypeMapping TypeName="Model.BanMsg">
+        <MappingFragment StoreEntitySet="BanMsg">
+          <ScalarProperty Name="ReasoneBan" ColumnName="ReasoneBan" />
+          <ScalarProperty Name="IdBanMessage" ColumnName="IdBanMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="Model.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="AdressId2" ColumnName="AdressId2" />
+          <ScalarProperty Name="AccountClientId" ColumnName="AccountClientId" />
+          <ScalarProperty Name="TheProspectOfFurtherCooperation" ColumnName="TheProspectOfFurtherCooperation" />
+          <ScalarProperty Name="PlantId" ColumnName="PlantId" />
+          <ScalarProperty Name="OrderVolume" ColumnName="OrderVolume" />
+          <ScalarProperty Name="TypeOfInstitutionalUnits" ColumnName="TypeOfInstitutionalUnits" />
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="Model.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="DayPerfomance" ColumnName="DayPerfomance" />
+          <ScalarProperty Name="WorkExpirience" ColumnName="WorkExpirience" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IdEmployee" ColumnName="IdEmployee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plants">
+      <EntityTypeMapping TypeName="Model.Plants">
+        <MappingFragment StoreEntitySet="Plants">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="PrimeCost" ColumnName="PrimeCost" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="IdPlant" ColumnName="IdPlant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provider">
+      <EntityTypeMapping TypeName="Model.Provider">
+        <MappingFragment StoreEntitySet="Provider">
+          <ScalarProperty Name="AdressId1" ColumnName="AdressId1" />
+          <ScalarProperty Name="AccountSupplierId" ColumnName="AccountSupplierId" />
+          <ScalarProperty Name="ResourceId" ColumnName="ResourceId" />
+          <ScalarProperty Name="NameOfSupplier" ColumnName="NameOfSupplier" />
+          <ScalarProperty Name="IdProvider" ColumnName="IdProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resource">
+      <EntityTypeMapping TypeName="Model.Resource">
+        <MappingFragment StoreEntitySet="Resource">
+          <ScalarProperty Name="CountResource" ColumnName="CountResource" />
+          <ScalarProperty Name="TypeOfRawMaterial" ColumnName="TypeOfRawMaterial" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="IdResource" ColumnName="IdResource" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="Model.UserRoles">
+        <MappingFragment StoreEntitySet="UserRoles">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IdUserRole" ColumnName="IdUserRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Model.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
+          <ScalarProperty Name="BanMessageId" ColumnName="BanMessageId" />
+          <ScalarProperty Name="UserPatronymic" ColumnName="UserPatronymic" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="IdUsers" ColumnName="IdUsers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="TechTable" TypeName="Model.TechTable" StoreEntitySet="TechTable">
+      <EndProperty Name="Plants">
+        <ScalarProperty Name="IdPlant" ColumnName="PlantID" />
+      </EndProperty>
+      <EndProperty Name="Client">
+        <ScalarProperty Name="IdClient" ColumnName="ClientID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

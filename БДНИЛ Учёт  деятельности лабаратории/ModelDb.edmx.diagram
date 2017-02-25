@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a2b10ab86ebe4dc99f4526d49a547eae" Name="Diagram1" ZoomLevel="77">
+        <EntityTypeShape EntityType="Model.Adress" Width="1.5" PointX="0.75" PointY="5" />
+        <EntityTypeShape EntityType="Model.BankClient" Width="1.5" PointX="3.75" PointY="2.125" />
+        <EntityTypeShape EntityType="Model.BankProvider" Width="1.5" PointX="0.75" PointY="8.5" />
+        <EntityTypeShape EntityType="Model.BanMsg" Width="1.5" PointX="2.75" PointY="12.375" />
+        <EntityTypeShape EntityType="Model.Client" Width="1.5" PointX="6" PointY="4.5" />
+        <EntityTypeShape EntityType="Model.Employee" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.Plants" Width="1.5" PointX="8.25" PointY="4.625" />
+        <EntityTypeShape EntityType="Model.Provider" Width="1.5" PointX="3" PointY="4.625" />
+        <EntityTypeShape EntityType="Model.Resource" Width="1.5" PointX="0.75" PointY="1.75" />
+        <EntityTypeShape EntityType="Model.UserRoles" Width="1.5" PointX="2.75" PointY="9.375" />
+        <EntityTypeShape EntityType="Model.Users" Width="1.5" PointX="5" PointY="8.625" />
+        <AssociationConnector Association="Model.FK_Client_Adress" />
+        <AssociationConnector Association="Model.FK_Provider_Adress" />
+        <AssociationConnector Association="Model.FK_Client_BankClient" />
+        <AssociationConnector Association="Model.FK_Provider_BankProvider" />
+        <AssociationConnector Association="Model.FK_Users_BanMsg" />
+        <AssociationConnector Association="Model.FK_Plants_Employee" />
+        <AssociationConnector Association="Model.FK_Provider_Resource" />
+        <AssociationConnector Association="Model.FK_Users_UserRoles" />
+        <AssociationConnector Association="Model.TechTable" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

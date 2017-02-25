@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="БДНИЛ Учёт  деятельности лабаратории.exe" version="1.0.0.0" publicKeyToken="644f49ee1fcf26ed" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="БДНИЛ Учёт  деятельности лабаратории" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="БДНИЛ Учёт  деятельности лабаратории.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--Параметры манифеста UAC
+             Если вы хотите изменить уровень контроля учетных записей, замените узел 
+             requestedExecutionLevel на один из следующих.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            При указании элемента requestedExecutionLevel будет отключена виртуализация файлов и реестра. 
+            Удалите этот элемент, если виртуализация требуется приложению для обратной
+            совместимости.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="5196496">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7W69dJBS+QGPZplnGuVGmt7fCGz4sb1CVrvpxOf2/wU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\EntityFramework.resources.dll" size="499920">
+      <assemblyIdentity name="EntityFramework.resources" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VbOzQ39kFM0u7ROm8SlbaL9+lF8Q2h/GRyIBwh/47BM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="621264">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ob9snjgg6D9D6fIN19mwozYqkxRvCv4LEzAYXi1RsMs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="БДНИЛ Учёт  деятельности лабаратории.exe" size="128032">
+      <assemblyIdentity name="БДНИЛ Учёт  деятельности лабаратории" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2hiCfx1mW0nlfkQJQT3AbNtA5mPKJK58VXZANeZEKRk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ModelDb.Context.tt" size="22931">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AqF9AZbu0KJ4+Gz+avEN7DAcXqmSCRtUlur4+CHSatg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ModelDb.tt" size="25276">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JrrigAM1FmvNH0fYsH3TfEIQxbUWP12VbnVisKqIJJQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="БДНИЛ Учёт  деятельности лабаратории.exe.config" size="1689">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7m25PICotumBRdZzr96SMiM3BzFVPlRybbAQsfHamn8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Список версий Windows, на которых это приложение было протестировано
+ и будет           работать. Раскомментируйте соответствующие элементы, чтобы ОС Windows 
+           автоматически выбрала наиболее совместимую среду. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=WIN-H5K7TCI67V1\Александр Домась" issuerKeyHash="872ffdc742c3ad65c4d5916fa81d5d5c2a4485ff" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>uXE9e22LicQO7GdpIgBN7C/L1jXJs2okWCFXKS9G7Kk=</DigestValue></Reference></SignedInfo><SignatureValue>CJ20BId++UIwWwAw84Bytwe5QjbrHxXTpZvfdsbcHfr65mLG8qTYEHYxrYuMvm3LcmsLkTJXPMdSWywnAdxEW4SHSIl4EN4eLuNriaWNZdv2Iqf/gQQP/hahdaU2bSp4I5i719/L5TH/25Y7JOlNm+3mouwe4fgSpOJTj889Ze0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>nfHRuPFT7ftHz68leM26FEMocnowroajXRRJRUDZk7ahBd7P9yBPsCpVrfmpg3x5SB3kpLrfquJVmN0raPOSSVzdbzTAxBGfviQNj6FeW9UrDAmCPNg2JXAUD0FvgeY7K8gVT0+tWEBDgdecMnAnT4rTzaO/iTFTCFOEp5PF3g8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a9ec462f29572158246ab3c935d6cb2fec4d00226967ec0ec4898b6d7b3d71b9" Description="" Url=""><as:assemblyIdentity name="БДНИЛ Учёт  деятельности лабаратории.exe" version="1.0.0.0" publicKeyToken="644f49ee1fcf26ed" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=WIN-H5K7TCI67V1\Александр Домась</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Lcw5/ZGJMdKSV50XwP0ioEbxDQxxB1exIAXc0+SzBxM=</DigestValue></Reference></SignedInfo><SignatureValue>IU+Z6ng6U2dEQ3Sa5pfAh0oDplCKobvucb6CqPrSeCqta5R/pEWUYNwRH5Z+i9FrwRTq36lK9jSRyVMalR4xnzCyeez8Nowkfc9wh5HzPx4wA25Ibb0zx8RVJS2kGFeelM+CjZa/Hw/8V1rHjWwrBYuDCbeu/FLW3J6UERLYq7M=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>nfHRuPFT7ftHz68leM26FEMocnowroajXRRJRUDZk7ahBd7P9yBPsCpVrfmpg3x5SB3kpLrfquJVmN0raPOSSVzdbzTAxBGfviQNj6FeW9UrDAmCPNg2JXAUD0FvgeY7K8gVT0+tWEBDgdecMnAnT4rTzaO/iTFTCFOEp5PF3g8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICGTCCAYKgAwIBAgIQYp3gy+jve69OKTRVRXjABTANBgkqhkiG9w0BAQsFADBLMUkwRwYDVQQDHkAAVwBJAE4ALQBIADUASwA3AFQAQwBJADYANwBWADEAXAQQBDsENQQ6BEEEMAQ9BDQEQAAgBBQEPgQ8BDAEQQRMMB4XDTE2MDUzMDA4MjA0NFoXDTE3MDUzMDE0MjA0NFowSzFJMEcGA1UEAx5AAFcASQBOAC0ASAA1AEsANwBUAEMASQA2ADcAVgAxAFwEEAQ7BDUEOgRBBDAEPQQ0BEAAIAQUBD4EPAQwBEEETDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAnfHRuPFT7ftHz68leM26FEMocnowroajXRRJRUDZk7ahBd7P9yBPsCpVrfmpg3x5SB3kpLrfquJVmN0raPOSSVzdbzTAxBGfviQNj6FeW9UrDAmCPNg2JXAUD0FvgeY7K8gVT0+tWEBDgdecMnAnT4rTzaO/iTFTCFOEp5PF3g8CAwEAATANBgkqhkiG9w0BAQsFAAOBgQByz8TUQmPRzF/DFdiwDHSE1r28/lwnFaIJ/bjs8SmXjwK5VjrXG/RTUk0/ducbN5babU1I7DHbvaKpjMeTZ8K0yYtoxbKH/OMjMgBWP1iXI4kArkTFGqdKXP5ZUL4EwWUI91HhtRHaPQ4XNc7KlFBZcdj3quoPwpVJxY9wpSHcng==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

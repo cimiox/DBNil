@@ -1,0 +1,19 @@
+﻿<Window x:Class="БДНИЛ_Учёт__деятельности_лабаратории.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:БДНИЛ_Учёт__деятельности_лабаратории"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="350" Width="525" Closed="Window_Closed">
+    <Grid KeyDown="Grid_KeyDown">
+        <Button x:Name="EnterButton" Content="Войти" HorizontalAlignment="Left" Margin="181,240,0,0" VerticalAlignment="Top" Width="134" Height="28" Click="EnterButton_Click"/>
+        
+        <TextBox x:Name="loginTb" HorizontalAlignment="Left" Height="37" Margin="220,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" RenderTransformOrigin="0.491,0.541" GotFocus="loginTb_GotFocus" LostFocus="loginTb_LostFocus"/>
+        <PasswordBox x:Name="passwordTb" HorizontalAlignment="Left" Margin="220,128,0,0" VerticalAlignment="Top" Width="170" Height="37"/>
+        <Label x:Name="loginText" Content="Логин:" HorizontalAlignment="Left" Margin="140,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.141,-1.365"/>
+        <Label x:Name="passwordText" Content="Пароль:" HorizontalAlignment="Left" Margin="140,132,0,0" VerticalAlignment="Top"/>
+        <!--<Label x:Name="EnterLoginL" Content="Введите логин" HorizontalAlignment="Left" Margin="218,65,0,0" VerticalAlignment="Top" Foreground="Gray" MouseDown="EnterLoginL_MouseDown"/>
+        <Label x:Name="EnterPasswordL" Content="Введите пароль" HorizontalAlignment="Left" Margin="218,123,0,0" VerticalAlignment="Top" Foreground="Gray" MouseDown="EnterPasswordL_MouseDown"/>-->
+    </Grid>
+</Window>

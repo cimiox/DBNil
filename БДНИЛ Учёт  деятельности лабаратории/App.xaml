@@ -1,0 +1,8 @@
+﻿<Application x:Class="БДНИЛ_Учёт__деятельности_лабаратории.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:БДНИЛ_Учёт__деятельности_лабаратории"
+             StartupUri="AuthorizationWindow.xaml">
+    <Application.Resources>
+    </Application.Resources>
+</Application>
